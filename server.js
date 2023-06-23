@@ -1,17 +1,7 @@
-// const express = require('express');
-const connection = require("./db/connection.js")
-const inquirer = require('inquirer')
+const connection = require("./db/connection.js");
+const inquirer = require('inquirer');
+require("console.table");
 
-// const PORT = process.env.PORT || 3306;
-// const app = express();
-
-// app.listen(PORT, () => {
-//   console.log(`Server running on port ${PORT}`);
-// });
-
-// // // middleware
-// app.use(express.urlencoded({ extended: false }));
-// app.use(express.json());
 
 
 const mainView = () =>{
@@ -85,9 +75,9 @@ const mainView = () =>{
 
   async function Viewallroles() {
   const query = `SELECT
-    roles.id,
-    roles.title,
-    roles.salary,
+    role.id,
+    role.title,
+    role.salary,
     department.name AS department
     FROM role
     LEFT JOIN department ON
@@ -160,6 +150,7 @@ const mainView = () =>{
         });
     
         console.log(`Department ${name} added successfully.`);
+        mainView();
       } catch (err) {
         console.error(err);
       }
@@ -178,7 +169,7 @@ const mainView = () =>{
     
         const departments = data.map((item) => `${item.name}`);
     
-        const userInput = await inquirer.prompt([
+        const userInput = await inquirer .prompt([
           {
             type: "input",
             name: "title",
@@ -215,9 +206,11 @@ const mainView = () =>{
     
         console.log(`\n-------------------\n Role ${title} has been added!\n`);
         Viewallroles();
+        mainView();
       } catch (err) {
         console.error(err);
       }
+
     }
     
 
