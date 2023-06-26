@@ -19,8 +19,9 @@ To use this application run server.js from the command line by typing 'node serv
 
 # Credits
 DU Tutor sessions and mxu4321 on github
+<br> Video Example [Untitled_ Jun 23, 2023 4_41 PM.webm](https://github.com/katrod69/cms/assets/132238081/176f67d3-c4b1-4131-8de8-bb4e4e38a83c)
 
-<iframe src="https://drive.google.com/file/d/11MzAKEt6ytZPELGLgv0bJsOpFKvZLubm/preview" width="640" height="480"></iframe>
+
 
 # License
 Attribution-ShareAlike 4.0 International
