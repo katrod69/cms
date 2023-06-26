@@ -1,8 +1,8 @@
 
 INSERT INTO department(name) VALUES
-(C-suite,),
-(Associates,),
-(Janitors,);
+("C-suite"),
+("Associates"),
+("Janitors");
 
 INSERT INTO roles(title, salary, department_id) VALUES
 ('CFO', 100000000, 1),
