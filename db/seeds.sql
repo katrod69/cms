@@ -8,14 +8,14 @@ INSERT INTO roles(title, salary, department_id) VALUES
 ('CFO', 100000000, 1),
 ('CEO', 200000000, 1),
 ('COO', 120000000, 1),
-('ASSOCIATE 1' 300, 2),
-('ASSOCIATE 2' 400, 2),
-('ASSOCIATE 3' 500, 2),
-('JANITOR 1' 500, 3),
-('JANITOR 1' 500, 3),
-('JANITOR 1' 500, 3);
+('ASSOCIATE 1', 300, 2),
+('ASSOCIATE 2' ,400, 2),
+('ASSOCIATE 3', 500, 2),
+('JANITOR 1',500, 3),
+('JANITOR 1' ,500, 3),
+('JANITOR 1' ,500, 3);
 
-INSERT INTO employees(first_name, last_name, role_id, manager_id) VALUES
+INSERT INTO employee(first_name, last_name, role_id, manager_id) VALUES
 ('stinky', 'Maury', 1, NULL),
 ('Delorian', 'Timmy', 2, NULL),
 ('Fawcet', 'Farra', 3, NULL),
